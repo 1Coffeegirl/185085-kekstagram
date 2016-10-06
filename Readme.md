@@ -1,7 +1,7 @@
-# Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Irina T.](https://up.htmlacademy.ru/javascript/7/user/185085).
-* Наставник: `Неизвестно`.
+* Наставник: `Антон Калин`.
 
 ---
 
