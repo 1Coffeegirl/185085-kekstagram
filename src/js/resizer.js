@@ -111,6 +111,23 @@
       // Координаты задаются от центра холста.
       this._ctx.drawImage(this._image, displX, displY);
 
+      // заливка
+
+      this._ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+      this._ctx.moveTo(-this._resizeConstraint.side / 2 - this._ctx.lineWidth,
+                 -this._resizeConstraint.side / 2 - this._ctx.lineWidth);
+      this._ctx.lineTo(this._resizeConstraint.side / 2 - this._ctx.lineWidth / 2,
+                 -this._resizeConstraint.side / 2 - this._ctx.lineWidth);
+      this._ctx.lineTo(this._resizeConstraint.side / 2 - this._ctx.lineWidth / 2,
+                 this._resizeConstraint.side / 2 - this._ctx.lineWidth / 2);
+      this._ctx.lineTo(-this._resizeConstraint.side / 2 - this._ctx.lineWidth,
+                 this._resizeConstraint.side / 2 - this._ctx.lineWidth / 2);
+      this._ctx.closePath();
+      this._ctx.font = '20px Arial';
+      this._ctx.textAlign = 'center';
+      this._ctx.fillStyle = '#fffff';
+     
+
       // Отрисовка прямоугольника, обозначающего область изображения после
       // кадрирования. Координаты задаются от центра.
       this._ctx.strokeRect(
@@ -127,6 +144,8 @@
       // сложные рассчеты для координат прямоугольника, который нужно очистить.
       this._ctx.restore();
     },
+
+
 
     /**
      * Включение режима перемещения. Запоминается текущее положение курсора,
